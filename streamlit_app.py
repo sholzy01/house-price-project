@@ -8,13 +8,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 import joblib
-# Train model
-model = RandomForestRegressor()
-model.fit(X_train, y_train)
-
-# Save model
 joblib.dump(model, "rf_model.joblib")
-print("Model saved!")
 
 st.title('California House Price Predictor (Demo)')
 
